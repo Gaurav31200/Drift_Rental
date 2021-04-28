@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <title>Drift Rentals</title>
+
+    <link href="/CSS/artwork.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="jumbotron-bg">
+    <div class=" p-3 rounded-lg jumbotron" id="jumbotron">
+
+        <h2 class="display-4 user-field"><%= user.C_fname %>  <%= user.C_lname %></h2>
+        <hr class="my-4">
+        <div class="container">
+           <h5 class="user-field">Username : <%= user.Customer_id %></h5>
+           <h5 class="user-field">Password : <%= user.Password %></h5>
+           <h5 class="user-field">First Name : <%= user.C_fname %></h5>
+           <h5 class="user-field">Last Name : <%= user.C_lname %></h5>
+           <h5 class="user-field">Aadhar Number : <%= user.Aadhar %></h5>
+           <h5 class="user-field">Address : <%= user.Address %></h5>
+           <h5 class="user-field">Contact : <%= user.Contact %></h5>
+           <h5 class="user-field">Email : <%= user.Email_id %></h5>
+        </div>
+
+        <hr class="my-4">
+        <form action="/logout" method="POST">
+            <button type="submit" class="success-btn">Logout</button>
+        </form> 
+        <form action="/Choose-Car" method="GET">
+            <button type="submit" class="success-btn">Book Another Car</button>
+        </form>
+      </div>
+      </div>
+</body>
+</html>
+
+  <%- include('partials/footer') -%>

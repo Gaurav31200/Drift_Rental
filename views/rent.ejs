@@ -1,0 +1,102 @@
+<%- include('partials/userHeader') -%>
+
+  <li class="nav-item">
+    <a class="nav-link" href="<%= newUser %>"><i class="far fa-user"></i>
+    </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  </nav>
+  <!-- Navbar ends  -->
+
+
+  <main id="rent-form">
+    <div class="container">
+      <div id="top" class="row">
+        <div class="col-lg-6 car-details">
+          <img src="/Images/<%= carImage%>.png" alt="<%=carImage%>" class="rent-car">
+        </div>
+        <div class="col-lg-6 car-details">
+          <h2>
+            <%= carDetail.Car_model %>
+          </h2>
+          <h3>Plate Number : <%= carDetail.Plate_no %>
+          </h3>
+          <h3>Car Type : <%= carDetail.Car_type %>
+          </h3>
+          <h3>Location : <%= locationName %>
+          </h3>
+          <h3>Rent/Day: Rs.<%= carDetail.RentPerDay %>
+          </h3>
+          <h2>
+            <%= avail %>
+          </h2>
+        </div>
+      </div>
+      <div class="py-5 text-center">
+        <p class="rent-form-head">Fill the form given below to complete your process to rent
+          this car and get amazing
+          experience.</p>
+      </div>
+
+      <div class="rentPart col-md-7 col-lg-12">
+        <h2 class="mb-3">Rent Form</h2>
+        <form action="/rent" method="POST" class="needs-validation">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="pickup">Pickup Location:</label>
+              <select class="form-control" name="pickup_id" id="pickup">
+                <option value="<%= carDetail.Location_id %>">
+                  <%= locationName %>
+                </option>
+              </select>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="drop">Choose a Drop off Location:</label>
+              <select class="form-control" name="drop_id" id="drop">
+                <option value="L101">DALLAS</option>
+                <option value="L102">LOS ANGELES</option>
+                <option value="L103">DALLAS FORT AIRPORT</option>
+                <option value="L104">WEST HOUSTON AIRPORT</option>
+                <option value="L105">WASHINGTON DULLES</option>
+                <option value="L106">NEWARK LIBERTY</option>
+                <option value="L107">SALT LAKE CITY AIRPORT</option>
+              </select>
+            </div>
+
+            <div class="col-sm-6">
+              <br>
+              <label for="from">Date of Booking:</label>
+              <input type="date" name="fromDate" value="2021-01-01" id="from" required autocomplete="off">
+            </div>
+
+            <div class="col-sm-6">
+              <br>
+              <label for="return">Date of Return:</label>
+              <input type="date" name="returnDate" value="2021-01-01" id="returndate" required autocomplete="off">
+            </div>
+
+            <div class="col-12">
+              <input type="hidden" name="plateNo" value="<%= carDetail.Plate_no %>">
+            </div>
+
+          </div>
+
+          <hr class="my-4">
+
+          <% if(carDetail.Avail_flag==='A' ){ %>
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Confirm Booking</button>
+            <% }else{ %>
+              <button class="w-100 btn btn-dark btn-lg" disabled>Car Already On Rent!</button>
+              <% } %>
+        </form>
+      </div>
+  </main>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+
+  <%- include('partials/footer') -%>

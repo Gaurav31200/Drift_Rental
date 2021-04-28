@@ -1,0 +1,455 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #0278ae;
+    background-color: #fff;
+}
+
+
+/* ---------------------------------------- header.ejs ---------------------------------------- */
+/* Navbar */
+.navbar{
+    background-color: #0278ae;
+    color: #fff;
+}
+.navbar-toggler-icon{
+    margin-top: 0;
+}
+
+
+/* ---------------------------------------- footer.ejs ---------------------------------------- */
+/* Footer */
+footer{
+    height: auto;
+    text-align: center;
+    padding: 40px 0 0 0;
+    background-color: #0278ae;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.copyright{
+    font-size: 0.7rem;
+}
+
+.logo{
+    width: 150px;
+}
+
+.footer-link{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 1.5rem 0;
+    padding: 0;
+}
+
+.footer-link li{
+    margin: 0 10px;
+}
+
+.footer-link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 1s ease;
+}
+
+.footer-link a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+
+
+/* ---------------------------------------- home.ejs ---------------------------------------- */
+/* Heading */
+.heading{
+    background-image: url("/Images/car3.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button{
+    width: 300px;
+    height: 75px;
+}
+
+/* About Us */
+#aboutUs{
+    margin: 0;
+    padding: 5% 10%;
+    text-align: center;
+    background-color: #fff;
+    color: #0278ae;
+    line-height: 2;
+}
+
+#aboutUs h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 10px;
+}
+
+#aboutUs p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/* Features */
+#Features{
+    margin: 0;
+    padding: 5% 10%;
+    background-color: #0278ae;
+    color: #fff;
+}
+
+.features h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.features p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.features{
+    text-align: center;
+    padding: 10px;
+}
+
+/* Testimonials */
+.title{
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    color: #fff;
+    font-size: 50px;
+}
+
+#hr{
+    border-style: dotted none none;
+    border-color: #fff;
+    width: 55px;
+    height: 0;
+    margin: 0 auto 20px;
+    border-width: 7px;
+}
+
+#myCarousel{
+  margin: 32px auto;
+  text-align: center;
+  background-color: #0278ae;
+  color: #fff;
+}
+
+.carousel {
+    margin: 2rem 0;
+}
+
+.carousel-inner{
+  padding: 0 30%;
+}
+
+@media only screen and (max-width: 400px){
+  .carousel-inner{
+    padding: 0 8%;
+  }
+}
+
+.carousel-item {
+  height: 15rem;
+}
+
+.review{
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 700px;
+  width: 80%;
+}
+
+.testimonial-image {
+  width: 45px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.client-name{
+  font-weight: bold;
+  font-size: larger;
+}
+
+
+
+.carousel-control-prev, .carousel-control-next{
+  background-color: #0278ae;
+}
+
+
+/* ---------------------------------------- register.ejs ---------------------------------------- */
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/Images/car2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+
+  .form-box{
+    width: 290px;
+    height: 540px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+  }
+
+  .button-box{
+    width: 254px;
+    margin: 35px auto;
+    position: relative;
+    border-color: #0278AE;
+    box-shadow: 0 0 20px 9px #6EB1D0;
+    border-radius: 30px;
+  }
+
+  .toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-size: 18px;
+    width: 125px;
+  }
+
+  #btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 127px;
+    height: 100%;
+    background: linear-gradient(to right, #0278AE, #92C5DC);
+    border-radius: 30px;
+    transition: .5s;
+  }
+
+  .input-login-group{
+    top: 200px;
+    position: absolute;
+    width: 230px;
+    transition: .5s;
+    text-align: center;
+    align-self: baseline;
+  }
+
+  .input-group{
+    position: absolute;
+    width: 230px;
+    transition: .5s;
+  }
+
+  .input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 0 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+  }
+
+  .submit-btn{
+    width: 85%;
+    padding: 10px 28px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto ;
+    background: linear-gradient(to right, #0278AE, #92C5DC);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+  }
+
+  .check-box{
+    margin: 30px 10px 30px 0;
+  }
+
+
+  #logIn{
+    left: 30px;
+  }
+
+  #signUp{
+    left: 330px;
+  }
+
+  /* ---------------------------------------- signout.ejs ---------------------------------------- */
+/* Sign Out */
+#logout{
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* ---------------------------------------- contact.ejs ---------------------------------------- */
+/* Conatct Us */
+@media screen and (max-width:768px) {
+  .contact-button {
+    text-align: center;
+  }
+}
+
+.contact-us{
+    padding: 5% 10%;
+}
+
+
+/* ---------------------------------------- carlist.ejs ---------------------------------------- */
+/* Car Card */
+.col{
+  margin-bottom: 40px;
+}
+
+/* Car Image */
+.card-body img{
+  width: 308px;
+}
+
+.d-flex{
+  padding: 0 20px;
+}
+
+
+/* ---------------------------------------- rent.ejs ---------------------------------------- */
+/* rent page */
+#rent-form{
+  margin-bottom: 50px;
+  text-align: center;
+}
+#top{
+  background-color: #0278ae;
+  color:#fff;
+  padding: 40px;
+  margin-top:30px;
+}
+
+.car-details{
+  padding: 4%;
+  text-align: center;
+}
+
+.rent-car{
+  width: 100%;
+}
+
+.rent-form-head{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+  @media only screen and (max-width: 992px) {
+  .rentPart {
+      margin: 0 auto 0;
+  }
+}
+
+
+/* ------User.ejs----------- */
+.success-btn{
+    width: 200px;
+    padding: 10px 28px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto ;
+    background: linear-gradient(to right, #0278AE, #92C5DC);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.user-field{
+  font-family: 'Noto Serif JP', serif;
+  text-decoration: rgb(49, 49, 49);
+
+}
+
+.fa-user-circle{
+  width: 50px;
+  font-size: x-large;
+}
+.jumbotron {
+
+  margin-bottom: 2rem;
+
+  border-radius: .3rem;
+}
+.jumbotron-bg{
+  background-color: rgb(136, 158, 185) ;
+}
+#jumbotron{
+  background-color: rgb(220, 234, 253) ;
+  text-align: center;
+}
+
+/* ---------------------------------------------------Date input in rent.ejs------------------------------------------------------*/
+input[type="date"]::-webkit-datetime-edit, input[type="date"]::-webkit-inner-spin-button, input[type="date"]::-webkit-clear-button {
+  color: #fff;
+  position: relative;
+}
+
+input[type="date"]::-webkit-datetime-edit-year-field{
+  position: absolute !important;
+  border-left:1px solid #8c8c8c;
+  padding: 2px;
+  color:#000;
+  left: 56px;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field{
+  position: absolute !important;
+  border-left:1px solid #8c8c8c;
+  padding: 2px;
+  color:#000;
+  left: 26px;
+}
+
+
+input[type="date"]::-webkit-datetime-edit-day-field{
+  position: absolute !important;
+  color:#000;
+  padding: 2px;
+  left: 4px;
+
+}

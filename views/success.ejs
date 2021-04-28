@@ -1,0 +1,22 @@
+<%- include('partials/userHeader') -%>
+
+   
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    <div class="container" style="margin-top: 8rem;">
+    <div class=" p-5 rounded-lg m-3 jumbotron">
+        <h1 class="display-6" style="text-align: center;">Congratulations! Your car is put on hold </h1>
+        <hr class="my-4">
+        <form action="/logout" method="POST">
+            <button type="submit" class="success-btn" title="Press this button to logout">Logout</button>
+        </form> 
+        <form action="/Choose-Car" method="GET">
+            <button type="submit" class="success-btn">Book Another Car</button>
+        </form>
+      </div>
+      </div>
+</body>
+</html>

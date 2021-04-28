@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Drift Rental | Logout</title>
+
+    <!-- Custom styles for this template -->
+    <link href="/CSS/artwork.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="logout" class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <button type="button" class="toggle-btn">See You!</button>
+            </div>
+            <form action="/logout" method="POST" class="input-group" id="logIn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1>
+                                <%= username%>
+                            </h1>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="submit-btn add-more" title="Press this button to logout">Logout</button>
+                        </div>
+                        <div class="col">
+                            <h3>Hasta le vista!</h3>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("logIn");
+        var z = document.getElementById("btn");
+
+        function logIn() {
+            x.style.left = "50px";
+        }
+
+    </script>
+
+</body>
+
+</html>

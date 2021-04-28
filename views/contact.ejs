@@ -1,0 +1,116 @@
+<%- include('partials/userHeader') -%>
+
+  <li class="nav-item">
+    <a class="nav-link" href="<%= newUser %>"><i class="far fa-user"></i>
+    </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  </nav>
+  <div class="container">
+    <section class="mb-4">
+      <!--Section heading-->
+      <h1 class="h1-responsive font-weight-bold text-center my-4">Contact Us</h1>
+      <!--Section description-->
+      <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
+        directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 col-lg-9 col-sm-12 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="/issues" method="POST">
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="name" class="">Your name</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Name" required
+                    autocomplete="off">
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="email" class="">Your email</label>
+                  <input type="text" id="email" name="userMail" class="form-control" placeholder="Email" required
+                    autocomplete="off">
+                </div>
+              </div>
+              <!--Grid column-->
+
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="name" class="">Your Username</label>
+                  <input type="text" id="name" name="userName" class="form-control" placeholder="Name" required
+                    autocomplete="off">
+                </div>
+              </div>
+              <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-12">
+
+                <div class="md-form">
+                  <label for="message">Your message</label>
+                  <textarea type="text" id="message" name="userMessage" rows="7" class="form-control md-textarea"
+                    placeholder="What is your message to us?" required autocomplete="off"></textarea>
+                </div>
+
+              </div>
+            </div>
+            <!--Grid row-->
+            <br>
+
+            <div class="contact-button">
+              <button type="submit" class="btn btn-outline-dark btn-lg" name="button">Submit</button>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="col-md-3 col-lg-3 col-sm-12 text-center container-fluid">
+
+          <div class="row">
+
+            <div class="col-sm-6 col-6 col-md-12">
+              <i class="fas fa-map-marker-alt mt-4 fa-4x"></i>
+              <p>Delhi Technological University, India</p>
+            </div>
+
+            <div class="col-sm-6 col-6 col-md-12">
+              <i class="fas fa-mobile-alt mt-4 fa-4x"></i>
+              <p>+91 991-050-3613</p>
+            </div>
+
+            <div class="col-sm-12 col-12 col-md-12">
+              <i class="fas fa-envelope mt-4 fa-4x"></i>
+              <p>driftrentalssupport@email.com</p>
+            </div>
+
+          </div>
+
+        </div>
+        <!--Grid column-->
+      </div>
+
+    </section>
+
+  </div>
+
+  <%- include('partials/footer') -%>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.82.0">
+  <title>Drift Rental | Log In</title>
+
+  <!-- Custom styles for this template -->
+  <link href="/CSS/artwork.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="logIn()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="signUp()">Sign Up</button>
+      </div>
+      <form action="/login" method="POST" class="input-login-group" id="logIn">
+        <input type="text" class="input-field" name="username" placeholder="User Name" required autocomplete="off" maxlength="8" autofocus>
+        <input type="password" class="input-field" name="password" placeholder="Password" required autocomplete="off">
+        <input type="checkbox" class="check-box"><span>Remember me</span>
+        <button type="submit" class="submit-btn">Log In</button>
+
+      </form>
+      <form action="/Register" method="POST" class="input-group" id="signUp">
+        <input type="text" class="input-field" name="username" placeholder="User Name" required autocomplete="off" maxlength="8">
+        <input type="password" class="input-field" name="password" placeholder="Password" required autocomplete="off">
+        <input type="text" class="input-field" name="firstName" placeholder="First Name" required autocomplete="off">
+        <input type="text" class="input-field" name="lastName" placeholder="Last Name" autocomplete="off">
+        <input type="text" class="input-field" name="aadharNo" placeholder="Aadhar Number" required autocomplete="off">
+        <input type="tel" class="input-field" name="contact" placeholder="Contact Number" required autocomplete="off">
+        <input type="text" class="input-field" name="address" placeholder="Address" required autocomplete="off">
+        <input type="email" class="input-field" name="email" placeholder="Email" required autocomplete="off">
+        <!-- <input type="checkbox" class="check-box" required autocomplete="off" checked><span>I agree to the terms and conditions.</span> -->
+        <button type="submit" class="submit-btn" style="margin-top: 30px;">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    var x = document.getElementById("logIn");
+    var y = document.getElementById("signUp");
+    var z = document.getElementById("btn");
+
+    function signUp() {
+      x.style.left = "-330px";
+      y.style.left = "30px";
+      z.style.left = "127px";
+    }
+    function logIn() {
+      x.style.left = "30px";
+      y.style.left = "330px";
+      z.style.left = "0px";
+    }
+
+  </script>
+
+</body>
+
+</html>
